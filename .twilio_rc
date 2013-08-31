@@ -1,0 +1,3 @@
+SID="YOUR_SID"
+AUTH="YOUR_AUTH_ID"
+SERVER_URL="http://zabbix.example.com"
