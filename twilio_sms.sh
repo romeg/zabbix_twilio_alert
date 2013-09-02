@@ -1,5 +1,6 @@
 #!/bin/bash
-. .twilio_rc
+SCRIPT_PATH="`dirname \"$0\"`"
+. $SCRIPT_PATH/.twilio_rc
 TO=$1;
 BODY=$2;
 RESPONSE=$(curl -q -XPOST https://api.twilio.com/2010-04-01/Accounts/${SID}/SMS/Messages \
