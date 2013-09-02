@@ -1,5 +1,6 @@
 #!/bin/bash
-. .twilio_rc
+SCRIPT_PATH="`dirname \"$0\"`"
+. $SCRIPT_PATH/.twilio_rc
 TO=$1;
 SUBJECT=$2;
 urlencode() {
